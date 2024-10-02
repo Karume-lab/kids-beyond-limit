@@ -4,7 +4,13 @@ type T_Partner = {
     externalLink: string,
 };
 
+type T_NavLink = {
+    name: string,
+    link: string,
+}
+
 
 export type {
     T_Partner,
+    T_NavLink,
 };

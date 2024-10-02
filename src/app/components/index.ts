@@ -7,6 +7,7 @@ import MoreThanASport from './MoreThanASport';
 import Partner from './Partner';
 import ReachingLives from './ReachingLives';
 import WhoWeAre from './WhoWeAre';
+import KblLogo from './KblLogo';
 
 
 export {
@@ -19,4 +20,5 @@ export {
     Partner,
     ReachingLives,
     WhoWeAre,
+    KblLogo,
 };

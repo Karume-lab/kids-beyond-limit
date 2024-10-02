@@ -1,10 +1,35 @@
+import { siteConfig } from '@/lib/site-config';
+import Link from 'next/link';
 import React from 'react'
+import KblLogo from './KblLogo';
+import { navLinks } from '@/lib/constants';
+import NavLink from './NavLink';
+import { Button } from '@/components/ui/button';
+
 
 const Header = () => {
     return (
-        <div>
-            Header
-        </div>
+        <nav>
+            <ul className='flex justify-between text-xl items-center px-20 font-bold'>
+                <li className='w-2/5'>
+                    <Link href={siteConfig.url}>
+                        <KblLogo />
+                    </Link>
+                </li>
+                <div  className='flex gap-10'>
+                {navLinks.map(({ name, link }) => {
+                    return (
+                        <NavLink key={link} name={name} link={link} />
+                    )
+                })}
+                </div>
+                <Button asChild className='bg-[#D8521B] hover:bg-[#E75D246B]'>
+                    <Link href={`${siteConfig.url}/contact-us`}>
+                        Contact us
+                    </Link>
+                </Button>
+            </ul>
+        </nav>
     )
 }
 

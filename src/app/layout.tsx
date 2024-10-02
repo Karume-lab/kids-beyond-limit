@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { siteConfig } from "@/lib/site-config";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "KBL",
-  description: "Kids Beyond Limit!",
+  title: siteConfig.url,
+  description: siteConfig.description,
 };
 
 const RootLayout = ({
