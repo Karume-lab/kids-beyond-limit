@@ -9,8 +9,9 @@ const KblLogo = () => {
             alt={`${siteConfig.name}'s Logo`}
             width={150}
             height={150}
+            className="w-auto h-auto"
         />
-    )
+    );
 }
 
 export default KblLogo;
