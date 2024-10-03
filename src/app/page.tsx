@@ -1,11 +1,12 @@
 import { partners } from "@/lib/constants";
-import { ContactUs, Footer, Header, MissionVission, MoreThanASport, Partner, ReachingLives, WhoWeAre } from "./components";
+import { ContactUs, Footer, Header, HeroSection, MissionVission, MoreThanASport, Partner, ReachingLives, WhoWeAre } from "./components";
 
 
 const Home = () => {
   return (
     <div>
       <Header />
+      <HeroSection />
       <ReachingLives />
       <WhoWeAre />
       <MissionVission />
