@@ -67,8 +67,19 @@ const statistics: T_Statistic[] = [
 ];
 
 
+const benefits: string[] = [
+    "Test themselves in peaceful competition against opponents",
+    "Dealing with victory and defeat",
+    "Accepting rules",
+    "Pushing past their limits and gain resilience",
+    "Fostering teamwork, collaboration and good sportsmanship",
+    "Acquire academic scholarship opportunities",
+]
+
+
 export {
     partners,
     navLinks,
     statistics,
+    benefits,
 }
