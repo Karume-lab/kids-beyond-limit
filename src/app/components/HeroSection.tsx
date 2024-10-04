@@ -8,7 +8,7 @@ const HeroSection = () => {
                 <div className='w-1/2'>
                     <h1 className='text-white text-6xl font-bold'>Empowering children through sports and education</h1>
                 </div>
-                <Button className='bg-[#65C8EE] hover:bg-[#90cfe7] font-extrabold px-4 w-fit'>Learn More</Button>
+                <Button className='bg-blue-light hover:bg-blue-pale font-extrabold px-4 w-fit'>Learn More</Button>
             </div>
         </div>
     )

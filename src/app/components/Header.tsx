@@ -24,7 +24,7 @@ const Header = () => {
                         )
                     })}
                 </div>
-                <Button asChild className='bg-[#D8521B] hover:bg-[#E75D246B]'>
+                <Button asChild className='bg-orange-dark hover:bg-orange-primary'>
                     <Link href={`${siteConfig.url}/contact-us`}>
                         Contact us
                     </Link>
