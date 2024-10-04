@@ -5,28 +5,45 @@ import { T_NavLink, T_Partner, T_Statistic } from "../types";
 const partners: T_Partner[] = [
     {
         name: "Play Hand Ball",
-        logoUrl: "/partner.png",
+        logoUrl: "/play-handball-logo.png",
         externalLink: "https://playhandball.com",
+        logoSize: 100,
     },
     {
-        name: "Play Hand Ball",
-        logoUrl: "/partner.png",
+        name: "Ministry of Youth Affairs, Creative Economy and Sports",
+        logoUrl: "/youth affairs-LOGO.jpg",
         externalLink: "https://playhandball.com",
+        logoSize: 600,
     },
     {
-        name: "Play Hand Ball",
-        logoUrl: "/partner.png",
+        name: "Strathmore University",
+        logoUrl: "/strathmore logo.png",
         externalLink: "https://playhandball.com",
+        logoSize: 400,
     },
     {
-        name: "Play Hand Ball",
-        logoUrl: "/partner.png",
+        name: "Daystar University",
+        logoUrl: "/daystar logo.png",
         externalLink: "https://playhandball.com",
+        logoSize: 200,
     },
     {
-        name: "Play Hand Ball",
-        logoUrl: "/partner.png",
+        name: "Masinde Muliro University of Science and Technology",
+        logoUrl: "/masinde-muliro logo.jpg",
         externalLink: "https://playhandball.com",
+        logoSize: 500,
+    },
+    {
+        name: "Kenyatta University",
+        logoUrl: "/ku logo.png",
+        externalLink: "https://playhandball.com",
+        logoSize: 400,
+    },
+    {
+        name: "Moi Forces Academy Nairobi",
+        logoUrl: "/Moi-Forces-Academy-Nairobi.jpg",
+        externalLink: "https://playhandball.com",
+        logoSize: 100,
     },
 ];
 

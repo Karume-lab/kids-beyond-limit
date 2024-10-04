@@ -1,17 +1,37 @@
+import { partners } from '@/lib/constants';
 import { T_Partner } from '@/lib/types'
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
+
+
+
+const Partners = () => {
+    return (
+        <section>
+            {partners.map(partner => {
+                return <Partner key={partner.externalLink} partner={partner} />
+            })}
+        </section>
+    );
+}
+
+
+export default Partners;
+
+
 type PartnerProps = {
     partner: T_Partner,
 }
+
 
 const Partner: React.FC<PartnerProps> = ({ partner }) => {
     const {
         name,
         externalLink,
         logoUrl,
+        logoSize,
     } = partner;
 
     return (
@@ -20,11 +40,9 @@ const Partner: React.FC<PartnerProps> = ({ partner }) => {
             <Image
                 src={logoUrl}
                 alt={`${name}'s Logo`}
-                width={150}
-                height={150}
+                width={logoSize}
+                height={logoSize}
             />
         </Link>
     )
 }
-
-export default Partner;

@@ -1,5 +1,4 @@
-import { partners } from "@/lib/constants";
-import { ContactUs, Footer, Header, HeroSection, MissionVission, MoreThanASport, Partner, ReachingLives, WhoWeAre } from "./components";
+import { ContactUs, Footer, Header, HeroSection, MissionVission, MoreThanASport, Partners, ReachingLives, WhoWeAre } from "./components";
 
 
 const Home = () => {
@@ -11,11 +10,7 @@ const Home = () => {
       <WhoWeAre />
       <MissionVission />
       <MoreThanASport />
-      <section>
-        {partners.map(partner => {
-          return <Partner key={partner.externalLink} partner={partner} />
-        })}
-      </section>
+      <Partners />
       <ContactUs />
       <Footer />
     </div>

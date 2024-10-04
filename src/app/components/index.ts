@@ -4,7 +4,7 @@ import Header from './Header';
 import HeroSection from './HeroSection';
 import MissionVission from './MissionVission';
 import MoreThanASport from './MoreThanASport';
-import Partner from './Partner';
+import Partners from './Partners';
 import ReachingLives from './ReachingLives';
 import WhoWeAre from './WhoWeAre';
 import KblLogo from './KblLogo';
@@ -19,7 +19,7 @@ export {
     HeroSection,
     MissionVission,
     MoreThanASport,
-    Partner,
+    Partners,
     ReachingLives,
     WhoWeAre,
     KblLogo,

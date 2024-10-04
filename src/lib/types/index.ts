@@ -1,5 +1,6 @@
 type T_Partner = {
     name: string,
+    logoSize: number,
     logoUrl: string,
     externalLink: string,
 }
