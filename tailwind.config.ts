@@ -9,6 +9,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			backgroundImage: {
+				'orange-gradient': 'linear-gradient(179.3deg, rgba(231, 93, 36, 0.76) 2.53%, #E75D24 96.21%)',
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
