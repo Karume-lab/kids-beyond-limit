@@ -1,5 +1,6 @@
-import { Button } from '@/components/ui/button';
 import React from 'react'
+import LearnMore from './LearnMore';
+
 
 const HeroSection = () => {
     return (
@@ -8,7 +9,7 @@ const HeroSection = () => {
                 <div className='w-1/2'>
                     <h1 className='text-white text-6xl font-bold'>Empowering children through sports and education</h1>
                 </div>
-                <Button className='bg-blue-light hover:bg-blue-pale font-extrabold px-4 w-fit'>Learn More</Button>
+                <LearnMore />
             </div>
         </div>
     )

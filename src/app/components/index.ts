@@ -8,6 +8,8 @@ import Partner from './Partner';
 import ReachingLives from './ReachingLives';
 import WhoWeAre from './WhoWeAre';
 import KblLogo from './KblLogo';
+import RoundedImageCard from './RoundedImageCard';
+import LearnMore from './LearnMore';
 
 
 export {
@@ -21,4 +23,6 @@ export {
     ReachingLives,
     WhoWeAre,
     KblLogo,
-};
+    RoundedImageCard,
+    LearnMore,
+}
