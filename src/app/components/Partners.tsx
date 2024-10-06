@@ -12,7 +12,7 @@ const Partners = () => {
             <Marquee autoFill pauseOnHover speed={70}>
                 {partners.map(({ name, logoSize, externalLink, logoUrl }) => {
                     return (
-                        <Link key={externalLink} href={externalLink}>
+                        <Link key={externalLink} href={externalLink} className='md:grayscale md:hover:grayscale-0'>
                             <Image
                                 src={logoUrl}
                                 alt={`${name}'s logo`}
