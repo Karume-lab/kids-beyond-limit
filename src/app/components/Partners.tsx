@@ -1,48 +1,32 @@
 import { partners } from '@/lib/constants';
-import { T_Partner } from '@/lib/types'
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
-
-
+import React from 'react';
+import Marquee from 'react-fast-marquee';
 
 
 const Partners = () => {
     return (
-        <section>
-            {partners.map(partner => {
-                return <Partner key={partner.externalLink} partner={partner} />
-            })}
-        </section>
+        <div className="p-8 bg-[#F9F9F9]">
+            <h2 className='text-blue-600 text-center text-3xl font-bold'>Our Valuable Patners</h2>
+            <Marquee autoFill pauseOnHover speed={70}>
+                {partners.map(({ name, logoSize, externalLink, logoUrl }) => {
+                    return (
+                        <Link key={externalLink} href={externalLink}>
+                            <Image
+                                src={logoUrl}
+                                alt={`${name}'s logo`}
+                                width={logoSize}
+                                height={logoSize}
+                                className='mx-4'
+                            />
+                        </Link>
+                    );
+                })}
+            </Marquee>
+        </div>
     );
-}
+};
 
 
 export default Partners;
-
-
-type PartnerProps = {
-    partner: T_Partner,
-}
-
-
-const Partner: React.FC<PartnerProps> = ({ partner }) => {
-    const {
-        name,
-        externalLink,
-        logoUrl,
-        logoSize,
-    } = partner;
-
-    return (
-        <Link href={externalLink}>
-            <h2>{name}</h2>
-            <Image
-                src={logoUrl}
-                alt={`${name}'s Logo`}
-                width={logoSize}
-                height={logoSize}
-            />
-        </Link>
-    )
-}
