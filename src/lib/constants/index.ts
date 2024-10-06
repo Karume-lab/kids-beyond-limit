@@ -1,5 +1,5 @@
 import { siteConfig } from "../site-config";
-import { T_NavLink, T_Partner, T_Statistic } from "../types";
+import { T_NavLink, T_Partner, T_Social, T_Statistic } from "../types";
 
 
 const partners: T_Partner[] = [
@@ -94,9 +94,30 @@ const benefits: string[] = [
 ]
 
 
+const socials: T_Social[] = [
+    {
+        text: "info@kidsbeyondlimit.co.ke",
+        logoUrl: "/social-icons/instagram.png",
+    },
+    {
+        text: "+254712345678",
+        logoUrl: "/social-icons/instagram.png",
+    },
+    {
+        text: "Facebook",
+        logoUrl: "/social-icons/instagram.png",
+    },
+    {
+        text: "Instagram",
+        logoUrl: "/social-icons/instagram.png",
+    },
+]
+
+
 export {
     partners,
     navLinks,
     statistics,
     benefits,
+    socials,
 }

@@ -15,9 +15,14 @@ type T_Statistic = {
     value: number,
 }
 
+type T_Social = {
+    text: string,
+    logoUrl: string,
+}
 
 export type {
     T_Partner,
     T_NavLink,
     T_Statistic,
+    T_Social,
 }
