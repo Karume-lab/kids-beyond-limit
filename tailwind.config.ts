@@ -11,6 +11,7 @@ const config: Config = {
 		extend: {
 			backgroundImage: {
 				'orange-gradient': 'linear-gradient(179.3deg, rgba(231, 93, 36, 0.76) 2.53%, #E75D24 96.21%)',
+				'blue-gradient': 'linear-gradient(180deg, #8BDFFF 0%, #65C8EE 71%, #32A6D2 100%)', // new gradient
 			},
 			colors: {
 				background: 'hsl(var(--background))',
@@ -67,6 +68,7 @@ const config: Config = {
 			}
 		}
 	},
+	// eslint-disable-next-line @typescript-eslint/no-require-imports
 	plugins: [require("tailwindcss-animate")],
 };
 
