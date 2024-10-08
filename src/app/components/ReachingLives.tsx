@@ -1,7 +1,10 @@
+"use client"
 import { Button } from '@/components/ui/button';
 import { statistics } from '@/lib/constants';
 import { MoveRight } from 'lucide-react';
 import React from 'react'
+// import CountUp from 'react-countup/build/CountUp';
+import CountUp from 'react-countup'
 
 
 const ReachingLives = () => {
@@ -17,13 +20,21 @@ const ReachingLives = () => {
                 </Button>
             </div>
             <div className="relative">
-                <div className="bg-white shadow-lg rounded-xl w-4/5 px-32 py-5 md:py-10 z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div className="bg-white shadow-lg rounded-xl w-3/4 px-28 py-5 md:py-10 z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <h2 className="font-bold italic text-xl text-black">Reaching Lives</h2>
                     <ul className="text-orange-primary flex justify-between items-center">
                         {statistics.map(({ name, value }) => {
                             return (
                                 <li key={name} className="flex flex-col ">
-                                    <span className='md:text-7xl font-bold'>{value}+</span>
+                                    <span className='md:text-7xl font-bold'>
+                                        <CountUp
+                                            end={value}
+                                            duration={5}
+                                            enableScrollSpy={true}
+                                            // scrollSpyOnce={true}
+                                        />+
+                                    </span>
+                                    {/* <span className='md:text-7xl font-bold'>{value}+</span> */}
                                     <span className="text-xl font-semibold">{name}</span>
                                 </li>
                             );
