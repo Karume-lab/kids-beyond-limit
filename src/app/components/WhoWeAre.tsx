@@ -6,22 +6,24 @@ import LearnMore from './LearnMore';
 
 const WhoWeAre = () => {
     return (
-        <div className='mt-40 px-60 flex  bg-blue-400'>
-            <div className=' space-y-5 bg-green-300 w-fit'>
-                <h2 className='text-sm font-bold bg-yellow-300 w-fit'>WHO WE ARE</h2>
-                <p className='w-[60%] bg-red-400 text-xl'>
-                    We are a non-profit, Sport for Development organization based in Kenya.
-                    Our journey began in 2008 in Korogocho slums, inspired by the unlimited
-                    possibilities a child can achieve in life if given a good environment anchored on UN SDGs.
+        <div className='mt-40 px-60 flex items-center justify-evenly'>
+            {/* Left Section: Text Content */}
+            <div className='space-y-5  max-w-lg'>
+                <h2 className='text-sm font-bold '>WHO WE ARE</h2>
+                <p className=' text-xl'>
+                    Kids Beyond Limit is a non-profit, Sports for Development Organization that inspires the unlimited possibilities a child can achieve in life if given a good nurturing environment. Since 2008, we’ve impacted over 300 young lives through scholarships, mentorship, and leadership programs. We believe every child deserves the chance to thrive in a safe, healthy, and inspiring environment.
                 </p>
                 <LearnMore />
             </div>
+
+            {/* Right Section: Image */}
             <RoundedImageCard
                 alt='The team in an indoor court'
                 imageUrl='/who-we-are-bg-img.png'
-                size={500}
+                size={500} // Adjust the size as needed
             />
         </div>
+
     )
 }
 
