@@ -50,15 +50,16 @@ const partners: T_Partner[] = [
 
 const navLinks: T_NavLink[] = [
     {
-        name: "HOME",
-        link: `${siteConfig.url}/home`,
+        name: "Home",
+        link: `/`,
     },
     {
-        name: "WHO WE ARE",
-        link: `${`http://127.0.0.1:3000`}/about`,
+        name: "About us",
+        link: `${siteConfig.url}/about`,
     },
     {
-        name: "GALLERY",
+        name: "Gallery",
+       
         link: `${siteConfig.url}/gallery`,
     },
 ];
@@ -67,7 +68,7 @@ const navLinks: T_NavLink[] = [
 const statistics: T_Statistic[] = [
     {
         name: "UPLIFTED",
-        value: 250,
+        value: 300,
     },
     {
         name: "ALLIANCES",

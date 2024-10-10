@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { siteConfig } from "@/lib/site-config";
 import { Fira_Sans } from "next/font/google";
+import { Header } from "./components";
 
 const firaSans = Fira_Sans({
   weight: ['200','400', '700'], // Specify the font weights you want to load
@@ -36,6 +37,7 @@ const RootLayout = ({
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={firaSans.className}
       >
+        <Header />
         {children}
       </body>
     </html>

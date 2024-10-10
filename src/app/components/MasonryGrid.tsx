@@ -47,7 +47,7 @@ const MasonryGrid = () => {
       <Masonry
         columnsCount={4}
         gutter="10px"
-        className="space-y-4 md:px-40 px:10"
+        className="space-y-4 md:px-40 px-10 py-10 "
       >
         {images.map((image, i) => (
           <Image
