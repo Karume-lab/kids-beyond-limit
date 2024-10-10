@@ -67,7 +67,7 @@ const navLinks: T_NavLink[] = [
 const statistics: T_Statistic[] = [
     {
         name: "UPLIFTED",
-        value: 250,
+        value: 300,
     },
     {
         name: "ALLIANCES",
