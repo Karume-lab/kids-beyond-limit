@@ -6,7 +6,7 @@ import React from 'react'
 
 const NavLink: React.FC<NavLinkProps> = ({ name, link }) => {
     return (
-        <Link href={link}>
+        <Link href={link} className='hover:text-orange-primary'>
             <span>{name}</span>
         </Link>
     )

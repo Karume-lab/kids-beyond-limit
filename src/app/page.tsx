@@ -1,10 +1,9 @@
-import { ContactUs, Footer, Header, HeroSection, MissionVission, MoreThanASport, Partners, ReachingLives, WhoWeAre } from "./components";
+import { ContactUs, Footer, HeroSection, MissionVission, MoreThanASport, Partners, ReachingLives, WhoWeAre } from "./components";
 
 
 const Home = () => {
   return (
     <div>
-      <Header />
       <HeroSection />
       <ReachingLives />
       <WhoWeAre />
