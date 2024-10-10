@@ -16,7 +16,7 @@ const PersonCard: React.FC<PersonCardProps> = ({ person }) => {
     } = person;
 
     return (
-        <div className='rounded-3xl shadow-2xl flex items-center gap-2 justify-center p-5 flex-col border-2 border-gray-500'>
+        <div className='rounded-3xl shadow-2xl flex items-center gap-2 justify-center p-5 flex-col border border-gray-500 hover:shadow-none transition duration-300'>
             <Image
                 src={profilePictureUrl}
                 alt={`${fullName}'s Picture`}
