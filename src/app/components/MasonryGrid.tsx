@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import ImageModal from '../gallery/_components/ImageModal';
+import Image from 'next/image';
+
 
 const MasonryGrid = () => {
   const images = [
@@ -41,27 +41,8 @@ const MasonryGrid = () => {
     "/gallery/P1030817.jpg",
   ];
 
-  // Function to randomly vary image height
-  const getRandomHeight = () => {
-    const minHeight = 200; // Minimum height for images
-    const maxHeight = 400; // Maximum height for images
-    return `${Math.floor(Math.random() * (maxHeight - minHeight + 1)) + minHeight}px`;
-  };
-
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
-  const openModal = (image: string) => {
-    setSelectedImage(image);
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
-
 
   return (
-    <div>
-
     <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
       <Masonry
         columnsCount={4}
@@ -69,32 +50,21 @@ const MasonryGrid = () => {
         className="space-y-4 md:px-40 px:10"
       >
         {images.map((image, i) => (
-          <img
-            onClick={() => openModal(image)}
+          <Image
             key={i}
             src={image}
             alt={`Gallery image ${i}`}
             style={{
-              width: '100%',
               display: 'block',
-              height: getRandomHeight(), // Randomly set height
-              objectFit: 'cover', // Ensure images cover the div area
+              objectFit: 'cover',
             }}
             className='rounded-md'
+            width={500}
+            height={200}
           />
         ))}
       </Masonry>
     </ResponsiveMasonry>
-
-      {selectedImage && (
-          <ImageModal
-          imageSrc={selectedImage!}
-          altText="Selected image"
-          isOpen={!!selectedImage}
-          onClose={closeModal}
-          />
-        )}
-    </div>
   )
   
 };

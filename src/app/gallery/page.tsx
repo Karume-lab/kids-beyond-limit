@@ -7,9 +7,9 @@ import MasonryGrid from "../components/MasonryGrid";
 
 const Page: React.FC = () => {
   return (
-    <div>
-    <MasonryGrid />
-    </div>
+    <>
+      <MasonryGrid />
+    </>
   );
 }
 
