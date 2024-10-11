@@ -7,7 +7,7 @@ import Marquee from 'react-fast-marquee';
 
 const Partners = () => {
     return (
-        <div className="p-8 bg-[#F9F9F9] mb-20">
+        <div className="p-8 bg-white pb-20">
             <h2 className='text-blue-600 text-center text-3xl font-bold my-5 py-10'>Our Valuable Patners</h2>
             <div className='hidden md:block'>
                 <Marquee autoFill pauseOnHover speed={70} >

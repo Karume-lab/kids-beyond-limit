@@ -2,7 +2,7 @@
 
 const MissionVission = () => {
     return (
-        <div className='bg-[url("/hero-bg.png")] bg-no-repeat bg-cover bg-fixed md:py-64 text-white flex flex-col gap-20 mt-10 md:mt-20'>
+        <div className='bg-[url("/hero-bg.png")] bg-no-repeat bg-cover bg-fixed py-24 md:py-56 text-white flex flex-col gap-10 md:gap-20   '>
             <Section
                 title="MISSION"
                 paragraph={`

@@ -13,7 +13,7 @@ const config: Config = {
 				fira: ['var(--fira-sans)', 'sans-serif'],  // Name the font family for Tailwind
 			},
 			backgroundImage: {
-				'orange-gradient': 'linear-gradient(179.3deg, rgba(231, 93, 36, 0.76) 2.53%, #E75D24 96.21%)',
+				'orange-gradient': 'linear-gradient(179.3deg, rgba(231, 93, 36, 0.76) 0%, #E75D24 0%)',
 				'blue-gradient': 'linear-gradient(180deg, #8BDFFF 0%, #65C8EE 71%, #32A6D2 100%)', // new gradient
 			},
 			colors: {

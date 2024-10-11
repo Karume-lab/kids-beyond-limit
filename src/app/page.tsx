@@ -1,9 +1,9 @@
-import { ContactUs, Footer, HeroSection, MissionVission, MoreThanASport, Partners, ReachingLives, WhoWeAre } from "./components";
+import { ContactUs,  HeroSection, MissionVission, MoreThanASport, Partners, ReachingLives, WhoWeAre } from "./components";
 
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <HeroSection />
       <ReachingLives />
       <WhoWeAre />
@@ -11,7 +11,6 @@ const Home = () => {
       <MoreThanASport />
       <Partners />
       <ContactUs />
-      <Footer />
     </div>
   );
 }

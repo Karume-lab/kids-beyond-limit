@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { siteConfig } from "@/lib/site-config";
 import { Fira_Sans } from "next/font/google";
-import { Header } from "./components";
+import { Footer, Header } from "./components";
 
 
 const firaSans = Fira_Sans({
@@ -36,10 +36,13 @@ const RootLayout = ({
     <html lang="en">
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={firaSans.className}
+        className={` ${firaSans.className}`}
       >
         <Header />
+        <div className="z-20">
         {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
