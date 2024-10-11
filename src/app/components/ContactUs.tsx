@@ -26,15 +26,15 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="md:flex p-4 md:p-20 justify-evenly space-y-8 md:space-y-0  ">
-            <div className=" md:w-1/3 flex flex-col justify-evenly space-y-4 md:space-y-0 ">
+        <div className="lg:flex p-4 lg:p-20 justify-evenly space-y-8 lg:space-y-0  ">
+            <div className=" lg:w-1/3 flex flex-col justify-evenly space-y-4 lg:space-y-0 ">
                 <div>
-                    <span className="uppercase font-semibold md:text-md">Contact us</span>
-                    <p className=" text-lg md:text-4xl pb-4">We&apos;d love to hear from you!</p>
+                    <span className="font-semibold text-md">CONTACT US</span>
+                    <p className=" text-lg lg:text-4xl pb-4">We&apos;d love to hear from you!</p>
                     <p>Whether you have questions, want to collaborate, or are simply curious about what we do, our team is always ready to connect. Reach out to us, and we’ll get back to you as soon as possible. Let&apos;s make a difference together today! </p>
                 </div>
                 <span>Give us a call:  </span>
-                <div className="flex gap-4 justify-center md:justify-start">
+                <div className="flex gap-4 justify-center lg:justify-start">
                     <Link href="placeholder" className="bg-gray-100 rounded-md p-2 ">
                         <Phone />
                     </Link>
@@ -49,7 +49,7 @@ const ContactUs = () => {
                     </Link>
                 </div>
             </div>
-            <form onSubmit={handleSubmit} className="space-y-6 md:w-1/3">
+            <form onSubmit={handleSubmit} className="space-y-6 lg:w-1/3">
                 <div className="flex flex-col space-y-2">
                     <Label htmlFor="name">Name</Label>
                     <Input
