@@ -10,7 +10,6 @@
     position: absolute;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    z-index: 20;
 
 }
 
@@ -26,11 +25,12 @@
     filter: blur(1px);
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 7px 7px 14px #6c85d0, -7px -7px 14px #6c85d0;
+    transition: all;
+    box-shadow: 7px 7px 14px #5fc3eb, -7px -7px 14px #6ccaef;
 }
 
 .ripple::before {
-    background: linear-gradient(to bottom right, #6c85d0 0%, #00000000);
+    background: linear-gradient(to bottom right, #65C8EE 0%, #00000000);
     animation: waves 4s linear forwards;
 }
 
