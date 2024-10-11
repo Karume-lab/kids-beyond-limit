@@ -10,6 +10,9 @@ import WhoWeAre from './WhoWeAre';
 import KblLogo from './KblLogo';
 import RoundedImageCard from './RoundedImageCard';
 import LearnMore from './LearnMore';
+import PersonCard from './PersonCard';
+import ActionCard from './ActionCard';
+import PillarCard from './PillarCard';
 
 
 export {
@@ -25,4 +28,7 @@ export {
     KblLogo,
     RoundedImageCard,
     LearnMore,
+    PersonCard,
+    ActionCard,
+    PillarCard,
 }
