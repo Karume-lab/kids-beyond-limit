@@ -7,8 +7,8 @@ const KblLogo = () => {
         <Image
             src={siteConfig.logoUrl}
             alt={`${siteConfig.name}'s Logo`}
-            width={150}
-            height={150}
+            width={80}
+            height={80}
             className="w-auto h-auto"
         />
     );
