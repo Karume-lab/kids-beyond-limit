@@ -1,10 +1,7 @@
 import React from 'react'
 import { ActionCard, PersonCard, PillarCard, RoundedImageCard } from '../components';
 import { actions, pillars, team } from '@/lib/constants';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import { siteConfig } from '@/lib/site-config';
-import { ArrowRight } from 'lucide-react';
+import Ripples from '../components/Ripples';
 
 
 const WhoWeArePage = () => {
@@ -101,16 +98,7 @@ const WhoWeArePage = () => {
             </section>
 
 
-            <section className='bg-blue-gradient h-96 gap-2 flex flex-col items-center py-96 justify-center text-white  md:px-48 text-center mt-20'>
-                <p className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold w-4/5 mx-auto'>We&apos;re creating a ripple effect that&apos;s changing families, communities, and futures.</p>
-                <Button asChild className='bg-orange-dark hover:bg-orange-primary w-fit'>
-                    <Link href={`${siteConfig.url}/contact-us`}>
-                        <div className='flex gap-3 items-center text-base md:text-xl py-2 justify-center'>
-                            <span>Let&apos;s create change together</span> <ArrowRight />
-                        </div>
-                    </Link>
-                </Button>
-            </section>
+            <Ripples/>
         </>
     )
 }
