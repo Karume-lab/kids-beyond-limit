@@ -6,7 +6,7 @@ import LearnMore from './LearnMore';
 
 const WhoWeAre = () => {
     return (
-        <div className='mt-40 px-10 md:px-60 flex flex-wrap items-center gap-5 justify-evenly'>
+        <div className='mt-64 md:mt-40 px-10 md:px-60 flex flex-wrap items-center gap-5 justify-evenly'>
             {/* Left Section: Text Content */}
             <div className='space-y-2 max-w-lg'>
                 <h2 className='text-sm font-bold '>WHO WE ARE</h2>
