@@ -1,5 +1,5 @@
 import React from 'react'
-import { ActionCard, Header, PersonCard, PillarCard, RoundedImageCard } from '../components';
+import { ActionCard, PersonCard, PillarCard, RoundedImageCard } from '../components';
 import { actions, pillars, team } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -10,7 +10,6 @@ import { ArrowRight } from 'lucide-react';
 const WhoWeArePage = () => {
     return (
         <>
-            <Header />
             <div className='relative w-full bg-[url("/who-we-are-hero-bg.png")] bg-no-repeat bg-cover bg-[25%_15%]  py-36'>
                 <div className='absolute inset-0 bg-black bg-opacity-50'></div>
                 <div className='py-16 pl-32 flex flex-col gap-10 relative'>

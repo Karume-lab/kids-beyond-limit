@@ -19,7 +19,7 @@ const partners: T_Partner[] = [
         name: "Strathmore University",
         logoUrl: "/strathmore logo.png",
         externalLink: "https://playhandball3.com",
-        logoSize: 400,
+        logoSize: 500,
     },
     {
         name: "Daystar University",
