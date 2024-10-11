@@ -21,8 +21,8 @@ const ActionCard: React.FC<ActionCardProps> = ({ action }) => {
                 <Image
                     src={imageUrl}
                     alt={`${title}`}
-                    width={200}
-                    height={200}
+                    width={300}
+                    height={300}
                 />
             </div>
             <h2 className='font-bold'>{title}</h2>
