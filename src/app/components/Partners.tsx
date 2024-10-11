@@ -49,7 +49,7 @@ const PartnersContainer = () => {
                                 alt={`${name}'s logo`}
                                 width={logoSize}
                                 height={logoSize}
-                                className='mx-0 md:mx-4 border-2 w-auto h-20'
+                                className='mx-0 md:mx-4 w-auto h-20'
                             />
                         </Link>
                     );
