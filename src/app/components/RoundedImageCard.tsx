@@ -19,7 +19,7 @@ const RoundedImageCard: React.FC<RoundedImageCardProps> = ({
             alt={alt}
             width={size}
             height={size}
-            className="w-full lg:w-auto max-w-sm lg:max-w-full rounded-xl"
+            className="w-96 rounded-xl"
         />
     );
 }
