@@ -72,12 +72,15 @@ const WhoWeArePage = () => {
                 </div>
 
                 <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 justify-center items-center">
-                    <RoundedImageCard
-                        imageUrl="/simple-mission.png"
-                        alt="Child"
-                        size={400}
-                    />
-                    <div className="flex flex-col text-center lg:text-left lg:w-1/3">
+                    <div className='order-2 lg:order-1'>
+                        <RoundedImageCard
+                            imageUrl="/simple-mission.png"
+                            alt="Child"
+                            size={400}
+                        />
+                    </div>
+
+                    <div className="flex flex-col text-center lg:text-left lg:w-1/3 order-1 lg:order-2">
                         <p className="font-medium text-3xl lg:text-5xl xl:text-6xl mb-5">
                             We&apos;re committed to the UN Sustainable Development Goals
                         </p>

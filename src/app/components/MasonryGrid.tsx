@@ -47,26 +47,26 @@ const MasonryGrid = () => {
       <Masonry
         columnsCount={4}
         gutter="10px"
-        className="space-y-4 md:px-40 px-10 py-10 "
+        className="space-y-4 md:px-40 px-10 py-10"
       >
         {images.map((image, i) => (
-          <Image
-            key={i}
-            src={image}
-            alt={`Gallery image ${i}`}
-            style={{
-              display: 'block',
-              objectFit: 'cover',
-            }}
-            className='rounded-md'
-            width={500}
-            height={200}
-          />
+          <div key={i} className="overflow-hidden group">
+            <Image
+              src={image}
+              alt={`Gallery image ${i}`}
+              style={{
+                display: 'block',
+                objectFit: 'cover',
+              }}
+              className='rounded-md transition-transform duration-300 group-hover:scale-125'
+              width={500}
+              height={200}
+            />
+          </div>
         ))}
       </Masonry>
     </ResponsiveMasonry>
-  )
-  
+  );
 };
 
 export default MasonryGrid;

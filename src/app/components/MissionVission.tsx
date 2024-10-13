@@ -2,7 +2,8 @@
 
 const MissionVission = () => {
     return (
-        <div className='bg-[url("/hero-bg.png")] bg-no-repeat bg-cover bg-fixed md:py-64 text-white flex flex-col gap-20 mt-10 md:mt-20'>
+        <div className='relative bg-[url("/hero-bg.png")] bg-no-repeat bg-cover bg-fixed md:py-32 text-white flex flex-col gap-20 mt-10 md:mt-20'>
+            <div className="absolute inset-0 bg-black bg-opacity-20"></div>
             <Section
                 title="MISSION"
                 paragraph={`
@@ -37,7 +38,7 @@ const Section: React.FC<SectionProps> = ({
     paragraph,
 }) => {
     return (
-        <div className="w-fit flex items-center justify-center flex-col mx-auto py-10 gap-5">
+        <div className="w-fit flex items-center justify-center flex-col mx-auto py-10 gap-5 z-10">
             <h2 className="text-3xl md:text-4xl lg:text-6xl underline">{title}</h2>
             <p className="px-10 lg:w-3/5 md:text-xl lg:text-2xl text-md text-center">
                 {paragraph}

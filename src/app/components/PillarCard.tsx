@@ -20,10 +20,8 @@ const PillarCard: React.FC<PillarCardProps> = ({ pillar }) => {
                 <p className="text-white text-base sm:text-lg md:text-xl">{description}</p>
             </div>
         </div>
-
-
-
     );
 }
+
 
 export default PillarCard;
