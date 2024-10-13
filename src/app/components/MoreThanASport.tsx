@@ -11,7 +11,7 @@ const MoreThanASport = () => {
                 <RoundedImageCard
                     imageUrl='/more-than-a-sport-bg-img.png'
                     alt='Girl throwing ball'
-                    size={800}
+                    size={400}
                 />
             </div>
             <div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex flex-col">
