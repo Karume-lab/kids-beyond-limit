@@ -1,8 +1,9 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import React from "react";
-import MasonryGrid from "../components/MasonryGrid";
 
+const MasonryGrid = dynamic(() => import("../components/MasonryGrid"), { ssr: false });
 
 const Page: React.FC = () => {
   return (
