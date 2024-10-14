@@ -7,7 +7,7 @@ import { siteConfig } from '@/lib/site-config';
 const Footer = () => {
     return (
         <>
-            <div className="bg-white h-auto flex flex-col md:flex-row gap-16 justify-around items-start p-8 md:p-16 border-t">
+            <div className="bg-white h-auto flex flex-col items-center text-center lg:text-start justify-center lg:flex-row gap-16 lg:justify-around lg:items-start p-8 md:p-16 border-t">
 
                 {/* Logo and Description */}
                 <div className="w-full md:w-1/4 mb-6 md:mb-0 border-r">
@@ -53,11 +53,11 @@ const Footer = () => {
                     <div>
                         <h3 className="font-semibold text-lg mb-4 text-gray-900">Follow Us</h3>
                         <div className="flex space-x-4 mb-6">
-                            <Link href="https://www.facebook.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition">
-                                <Facebook className="w-6 h-6 hover:text-blue-600" />
+                            <Link href="https://www.facebook.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition hover:text-blue-600 duration-300">
+                                <Facebook className="w-6 h-6" />
                             </Link>
-                            <Link href="https://www.instagram.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition">
-                                <Instagram className="w-6 h-6 hover:text-pink-600" />
+                            <Link href="https://www.instagram.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition hover:text-pink-600 duration-300">
+                                <Instagram className="w-6 h-6" />
                             </Link>
                         </div>
 
@@ -66,7 +66,7 @@ const Footer = () => {
                             <Link href="mailto:info@kidsbeyondlimit.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition">
                                 <Mail className="w-6 h-6 hover:text-green-600" />
                             </Link>
-                            <Link href="tel:+0724984502" className="bg-gray-100 rounded-full p-3 hover:bg-gray-200 transition">
+                            <Link href="tel:+0724984502" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition">
                                 <Phone className="w-6 h-6 hover:text-green-600" />
                             </Link>
                         </div>

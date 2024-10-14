@@ -69,19 +69,19 @@ const ContactUs = () => {
                         as soon as possible. Let&apos;s make a difference together today!
                     </p>
                 </div>
-                <span>Give us a call:  </span>
+                <span>Give us a call:</span>
                 <div className="flex gap-4 justify-center lg:justify-start">
-                    <Link href="placeholder" className="bg-gray-100 rounded-md p-2 ">
-                        <Instagram />
+                    <Link href="https://www.facebook.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition hover:text-blue-600 duration-300">
+                        <Facebook className="w-6 h-6" />
                     </Link>
-                    <Link href="placeholder" className="bg-gray-100 rounded-md p-2 ">
-                        <Facebook />
+                    <Link href="https://www.instagram.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition hover:text-pink-600 duration-300">
+                        <Instagram className="w-6 h-6" />
                     </Link>
-                    <Link href="placeholder" className="bg-gray-100 rounded-md p-2 ">
-                        <Mail />
+                    <Link href="mailto:info@kidsbeyondlimit.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition">
+                        <Mail className="w-6 h-6 hover:text-green-600" />
                     </Link>
-                    <Link href="placeholder" className="bg-gray-100 rounded-md p-2 ">
-                        <Phone />
+                    <Link href="tel:+0724984502" className="bg-gray-100 p-3 rounded-md hover:bg-gray-200 transition">
+                        <Phone className="w-6 h-6 hover:text-green-600" />
                     </Link>
                 </div>
             </div>
