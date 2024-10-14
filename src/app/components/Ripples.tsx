@@ -29,9 +29,9 @@ const Ripples = () => {
 
 
     return (
-        <section onClick={handleClick} id='rippleContainer' className=' select-none relative  h-96 gap-2 overflow-hidden flex flex-col items-center py-96 justify-center text-white bg-blue-gradient md:px-48 text-center mt-20'>
-            <p className='z-10 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold w-4/5 mx-auto'>We&apos;re creating a ripple effect that&apos;s changing families, communities, and futures.</p>
-            <Button asChild className='bg-orange-dark z-10 hover:bg-orange-primary w-fit'>
+        <section onClick={handleClick} id='rippleContainer' className='select-none relative  h-96 gap-2 overflow-hidden flex flex-col items-center py-96 justify-center text-white bg-blue-gradient md:px-48 text-center mt-20'>
+            <p className='z-40 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold w-4/5 mx-auto'>We&apos;re creating a ripple effect that&apos;s changing families, communities, and futures.</p>
+            <Button asChild className='bg-orange-dark z-40 hover:bg-orange-primary w-fit'>
                 <Link href={`${siteConfig.url}/contact-us`}>
                     <div className='flex gap-3 items-center text-base md:text-xl py-2 justify-center'>
                         <span>Let&apos;s create change together</span> <ArrowRight />

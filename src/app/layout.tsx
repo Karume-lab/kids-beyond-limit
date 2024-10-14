@@ -36,11 +36,11 @@ const RootLayout = ({
     <html lang="en">
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={` ${firaSans.className}`}
+        className={`${firaSans.className}`}
       >
         <Header />
-        <div className="z-20">
-        {children}
+        <div className="">
+          {children}
         </div>
         <Toaster />
         <Footer />

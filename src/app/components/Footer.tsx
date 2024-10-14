@@ -52,17 +52,17 @@ const Footer = () => {
                     <div>
                         <h3 className="font-semibold text-lg mb-4 text-gray-900">Follow Us</h3>
                         <div className="flex space-x-4 mb-6">
-                            <Link href="https://www.facebook.com" className="bg-gray-100 rounded-full p-3 hover:bg-gray-200 transition">
+                            <Link href="https://www.facebook.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition">
                                 <Facebook className="w-6 h-6 hover:text-blue-600" />
                             </Link>
-                            <Link href="https://www.instagram.com" className="bg-gray-100 rounded-full p-3 hover:bg-gray-200 transition">
+                            <Link href="https://www.instagram.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition">
                                 <Instagram className="w-6 h-6 hover:text-pink-600" />
                             </Link>
                         </div>
 
                         <h3 className="font-semibold text-lg mb-4 text-gray-900">Get In Touch</h3>
                         <div className="flex space-x-4">
-                            <Link href="mailto:support@example.com" className="bg-gray-100 rounded-full p-3 hover:bg-gray-200 transition">
+                            <Link href="mailto:support@example.com" className="bg-gray-100 rounded-md p-3 hover:bg-gray-200 transition">
                                 <Mail className="w-6 h-6 hover:text-green-600" />
                             </Link>
                             <Link href="tel:+123456789" className="bg-gray-100 rounded-full p-3 hover:bg-gray-200 transition">

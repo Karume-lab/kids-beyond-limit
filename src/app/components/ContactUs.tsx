@@ -72,16 +72,16 @@ const ContactUs = () => {
                 <span>Give us a call:  </span>
                 <div className="flex gap-4 justify-center lg:justify-start">
                     <Link href="placeholder" className="bg-gray-100 rounded-md p-2 ">
-                        <Phone />
-                    </Link>
-                    <Link href="placeholder" className="bg-gray-100 rounded-md p-2 ">
-                        <Mail />
+                        <Instagram />
                     </Link>
                     <Link href="placeholder" className="bg-gray-100 rounded-md p-2 ">
                         <Facebook />
                     </Link>
                     <Link href="placeholder" className="bg-gray-100 rounded-md p-2 ">
-                        <Instagram />
+                        <Mail />
+                    </Link>
+                    <Link href="placeholder" className="bg-gray-100 rounded-md p-2 ">
+                        <Phone />
                     </Link>
                 </div>
             </div>

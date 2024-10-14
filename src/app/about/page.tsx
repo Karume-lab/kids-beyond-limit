@@ -6,7 +6,7 @@ import Ripples from '../components/Ripples';
 
 const WhoWeArePage = () => {
     return (
-        <div className='bg-white'>
+        <div className='bg-white '>
             <div className='relative w-full bg-[url("/who-we-are-hero-bg.png")] bg-no-repeat bg-cover bg-[25%_15%] py-24 sm:py-36'>
                 <div className='absolute inset-0 bg-black bg-opacity-50'></div>
                 <div className='relative py-12 px-6 sm:pl-16 lg:pl-32 flex flex-col gap-6 sm:gap-10'>
