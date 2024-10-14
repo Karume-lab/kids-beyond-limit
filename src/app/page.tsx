@@ -3,7 +3,7 @@ import { ContactUs,  HeroSection, MissionVission, MoreThanASport, Partners, Reac
 
 const Home = () => {
   return (
-    <div className="">
+    <>
       <HeroSection />
       <ReachingLives />
       <WhoWeAre />
@@ -11,7 +11,7 @@ const Home = () => {
       <MoreThanASport />
       <Partners />
       <ContactUs />
-    </div>
+    </>
   );
 }
 

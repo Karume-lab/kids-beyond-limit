@@ -53,28 +53,35 @@ const WhoWeArePage = () => {
                 </section>
 
             </div>
-
-            <section className='bg-orange-gradient text-white py-20 flex gap-32 flex-col'>
-                <div className='flex  w-2/3 mx-auto gap-5'>
-                    <div className='flex flex-col'>
-                        <span>OUR MISSION IS SIMPLE</span>
-                        <p className='font-medium text-6xl'>Every child deserves the chance to live, learn, play, and grow in a safe, healthy, and inspiring environment.</p>
+            <section className="bg-orange-gradient text-white py-20 flex flex-col gap-16 px-5">
+                <div className="flex items-center gap-5 lg:gap-0 flex-col lg:flex-row justify-center">
+                    <div className="flex flex-col text-center lg:text-left lg:w-1/3">
+                        <span className="text-sm lg:text-base">OUR MISSION IS SIMPLE</span>
+                        <p className="font-medium text-3xl lg:text-5xl xl:text-6xl">
+                            Every child deserves the chance to live, learn, play, and grow in a safe, healthy, and inspiring environment.
+                        </p>
                     </div>
                     <RoundedImageCard
-                        imageUrl='/simple-mission.png'
-                        alt='Child'
-                        size={300}
+                        imageUrl="/simple-mission.png"
+                        alt="Child"
+                        size={400}
                     />
                 </div>
-                <div className='flex w-2/3 mx-auto gap-5'>
-                    <RoundedImageCard
-                        imageUrl='/simple-mission.png'
-                        alt='Child'
-                        size={300}
-                    />
-                    <div className='flex flex-col justify-items-center mx-auto'>
-                        <p className='font-medium text-6xl'>We&apos;re committed to the UN Sustainable Development Goals</p>
-                        <ul>
+
+                <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 justify-center items-center">
+                    <div className='order-2 lg:order-1'>
+                        <RoundedImageCard
+                            imageUrl="/simple-mission.png"
+                            alt="Child"
+                            size={400}
+                        />
+                    </div>
+
+                    <div className="flex flex-col text-center lg:text-left lg:w-1/3 order-1 lg:order-2">
+                        <p className="font-medium text-3xl lg:text-5xl xl:text-6xl mb-5">
+                            We&apos;re committed to the UN Sustainable Development Goals
+                        </p>
+                        <ul className="space-y-2">
                             <li>Good Health and Well-being (SDG 3)</li>
                             <li>Gender Equality (SDG 5)</li>
                             <li>Quality Education (SDG 4)</li>
@@ -83,6 +90,7 @@ const WhoWeArePage = () => {
                     </div>
                 </div>
             </section>
+
 
             <section className="w-2/3 px-5 sm:px-10 mx-auto">
                 <h2 className="text-3xl sm:text-4xl text-center font-bold underline decoration-orange-primary decoration-4 py-10 sm:py-14">

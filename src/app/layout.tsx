@@ -4,10 +4,10 @@ import "./globals.css";
 import { siteConfig } from "@/lib/site-config";
 import { Fira_Sans } from "next/font/google";
 import { Footer, Header } from "./components";
-
+import { Toaster } from "@/components/ui/toaster";
 
 const firaSans = Fira_Sans({
-  weight: ['200','400', '700'], // Specify the font weights you want to load
+  weight: ['200', '400', '700'], // Specify the font weights you want to load
   subsets: ['latin'],     // Character subsets you need
 });
 
@@ -42,6 +42,7 @@ const RootLayout = ({
         <div className="z-20">
         {children}
         </div>
+        <Toaster />
         <Footer />
       </body>
     </html>
