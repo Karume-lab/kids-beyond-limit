@@ -58,7 +58,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="bg-white lg:flex p-4 lg:p-20 justify-evenly space-y-8 lg:space-y-0  ">
+        <div id="contact-us" className="bg-white lg:flex p-4 lg:p-20 justify-evenly space-y-8 lg:space-y-0  ">
             <div className=" lg:w-1/3 flex flex-col justify-evenly space-y-4 lg:space-y-0 ">
                 <div>
                     <span className="font-semibold text-md">CONTACT US</span>

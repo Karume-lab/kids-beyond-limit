@@ -4,10 +4,17 @@ const siteConfig = {
     description: "Empowering children to reach their full potential through sports and education.",
     logoUrl: "/kbl-logo 1.png",
     links: {
-        reachingLives: "/#reaching-lives",
         about: "/about",
         home: "/",
+        reachingLives: "/#reaching-lives",
+        whoWeAre: "/#who-we-are",
+        missionVision: "/#mission-vision",
+        partners: "/#partners",
         contact: "/#contact-us",
+        team: "/about/#team",
+        pillars: "/about/#pillars",
+        gallery: "/gallery",
+        whatWedo: "/about/#what-we-do"
     },
     social: {
         facebook: "https://facebook.com/kidsbeyondlimit",

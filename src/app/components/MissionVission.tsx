@@ -2,7 +2,7 @@
 
 const MissionVission = () => {
     return (
-        <div className='relative bg-[url("/hero-bg.png")] bg-no-repeat bg-cover bg-fixed md:py-32 text-white flex flex-col gap-20 pt-10 md:pt-20'>
+        <div id="mission-vision" className='relative bg-[url("/hero-bg.png")] bg-no-repeat bg-cover bg-fixed md:py-32 text-white flex flex-col gap-20 pt-10 md:pt-20'>
             <div className="absolute inset-0 bg-black bg-opacity-20"></div>
             <Section
                 title="MISSION"

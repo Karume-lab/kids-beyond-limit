@@ -7,7 +7,7 @@ import { siteConfig } from '@/lib/site-config';
 
 const WhoWeAre = () => {
     return (
-        <div className='mt-56 md:mt-80 xl:mt-40 px-10 md:px-20 lg:px-60 flex flex-wrap gap-5 justify-evenly'>
+        <div id='who-we-are' className='mt-56 md:mt-80 xl:mt-40 p-10 md:px-20 lg:px-60 flex flex-wrap gap-5 justify-evenly'>
             {/* Left Section: Text Content */}
             <div className='space-y-2 max-w-lg'>
                 <h2 className='text-sm font-bold '>WHO WE ARE</h2>

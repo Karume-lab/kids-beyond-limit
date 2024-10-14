@@ -31,7 +31,7 @@ const WhoWeArePage = () => {
                     </p>
                 </section>
 
-                <section className='py-20  '>
+                <section id='team' className='py-20'>
                     <span className='font-semibold pb-4'>OUR TEAM</span>
                     <p className='text-base md:text-lg '>Together, we work tirelessly to create opportunities, foster growth, and empower children through education, mentorship, and sports.</p>
                     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 lg:gap-20 py-8'>
@@ -42,7 +42,7 @@ const WhoWeArePage = () => {
                 </section>
 
 
-                <section className=' space-y-4 '>
+                <section id='what-we-do' className='space-y-4'>
                     <span className='font-semibold text-lg sm:text-xl'>WHAT WE DO</span>
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 lg:gap-20'>
@@ -92,7 +92,7 @@ const WhoWeArePage = () => {
             </section>
 
 
-            <section className="w-2/3 px-5 sm:px-10 mx-auto">
+            <section id='pillars' className="w-2/3 px-5 sm:px-10 mx-auto">
                 <h2 className="text-3xl sm:text-4xl text-center font-bold underline decoration-orange-primary decoration-4 py-10 sm:py-14">
                     Our Pillars
                 </h2>
