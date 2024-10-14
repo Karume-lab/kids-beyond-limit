@@ -1,4 +1,4 @@
-import { ContactUs, HeroSection, MissionVission, MoreThanASport, Partners, ReachingLives, WhoWeAre } from "./components";
+import { ContactUs,  HeroSection, MissionVission, MoreThanASport, Partners, ReachingLives, WhoWeAre } from "./components";
 
 
 const Home = () => {

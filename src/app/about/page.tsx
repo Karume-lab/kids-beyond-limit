@@ -1,15 +1,12 @@
 import React from 'react'
 import { ActionCard, PersonCard, PillarCard, RoundedImageCard } from '../components';
 import { actions, pillars, team } from '@/lib/constants';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import { siteConfig } from '@/lib/site-config';
-import { ArrowRight } from 'lucide-react';
+import Ripples from '../components/Ripples';
 
 
 const WhoWeArePage = () => {
     return (
-        <>
+        <div className='bg-white'>
             <div className='relative w-full bg-[url("/who-we-are-hero-bg.png")] bg-no-repeat bg-cover bg-[25%_15%] py-24 sm:py-36'>
                 <div className='absolute inset-0 bg-black bg-opacity-50'></div>
                 <div className='relative py-12 px-6 sm:pl-16 lg:pl-32 flex flex-col gap-6 sm:gap-10'>
@@ -22,7 +19,7 @@ const WhoWeArePage = () => {
             </div>
 
 
-            <div className='md:w-2/3 px-10 py-8 sm:px-12 md:px-14 lg:px-20 mx-auto my-5 flex flex-col gap-10'>
+            <div className='md:w-2/3 px-10 py-8 sm:px-12 md:px-14 lg:px-20 mx-auto my-5 flex flex-col gap-10 bg-white'>
                 <section className='flex flex-col gap-2 md:gap-5'>
                     <span className='font-semibold'>WHO WE ARE</span>
                     <h2 className='italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl w-11/12'>We are more than a non-profit organization, we are a <span className='text-orange-primary font-bold'>movement for change</span></h2>
@@ -109,17 +106,8 @@ const WhoWeArePage = () => {
             </section>
 
 
-            <section className='bg-blue-gradient h-96 gap-2 flex flex-col items-center py-96 justify-center text-white  md:px-48 text-center mt-20'>
-                <p className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold w-4/5 mx-auto'>We&apos;re creating a ripple effect that&apos;s changing families, communities, and futures.</p>
-                <Button asChild className='bg-orange-dark hover:bg-orange-primary w-fit'>
-                    <Link href={`${siteConfig.url}/contact-us`}>
-                        <div className='flex gap-3 items-center text-base md:text-xl py-2 justify-center'>
-                            <span>Let&apos;s create change together</span> <ArrowRight />
-                        </div>
-                    </Link>
-                </Button>
-            </section>
-        </>
+            <Ripples/>
+        </div>
     )
 }
 
