@@ -35,11 +35,11 @@ const Header: React.FC = () => {
 
     return (
         <header className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300 ease-in-out ${isScrolling ? '-translate-y-full' : 'translate-y-0'}`}>
-            <div className="px-4 lg:px-44 py-4 flex justify-between items-center">
+            <div className="px-4 lg:px-32 xl:px-40 py-4 flex justify-between items-center">
                 <Link href={siteConfig.links.home} className="flex items-center space-x-2">
                     <KblLogo />
                 </Link>
-                <nav className="hidden md:flex space-x-20 items-center">
+                <nav className="hidden lg:flex space-x-20 items-center">
                     {navLinks.map(({ name, link }) => (
                         <NavLink key={name} link={link} name={name} />
                     ))}
@@ -47,12 +47,12 @@ const Header: React.FC = () => {
                 <Button asChild className='hidden lg:block lg:text-lg'>
                     <Link href={siteConfig.links.contact}>Contact us</Link>
                 </Button>
-                <button className="md:hidden" onClick={toggleMenu}>
+                <button className="lg:hidden" onClick={toggleMenu}>
                     {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
             </div>
             {isMenuOpen && (
-                <div className="md:hidden">
+                <div className="lg:hidden">
                     <nav className="px-4 py-4 flex flex-col items-center space-y-4 transition-all duration-300 ease-in-out transform origin-top">
                         {navLinks.map(({ name, link }) => (
                             <NavLink key={name} link={link} name={name} />
