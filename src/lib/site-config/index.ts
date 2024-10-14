@@ -1,5 +1,5 @@
 const siteConfig = {
-    url: process.env.NEXT_PUBLIC_SITE_URL || "http://127.0.0.1:3000",
+    url: process.env.NEXT_PUBLIC_SITE_URL,
     name: "Kids Beyond Limit",
     description: "Empowering children to reach their full potential through sports and education.",
     logoUrl: "/kbl-logo 1.png",
