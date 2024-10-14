@@ -59,7 +59,7 @@ const navLinks: T_NavLink[] = [
     },
     {
         name: "Gallery",
-       
+
         link: `${siteConfig.url}/gallery`,
     },
 ];
@@ -117,21 +117,21 @@ const socials: T_Social[] = [
 
 const team: T_Person[] = [
     {
-        fullName: "Dr. Daniel Karume",
-        role: "CEO",
+        fullName: "Fredrick Olonde",
+        role: "Founder and Project Manager",
         profilePictureUrl: "/team/person-1.jpg",
         linkedInUrl: "https://linkedin.com",
     },
     {
-        fullName: "Dr. Daniel Karume",
-        role: "CEO",
-        profilePictureUrl: "/team/person-1.jpg",
+        fullName: "Doreen Makaka",
+        role: "Head of Communications and Director of External Affairs",
+        profilePictureUrl: "/team/doreen.jpg",
         linkedInUrl: "https://linkedin.com",
     },
     {
-        fullName: "Dr. Daniel Karume",
-        role: "CEO",
-        profilePictureUrl: "/team/person-1.jpg",
+        fullName: "Victor Siero",
+        role: "Programmes Coordinator",
+        profilePictureUrl: "/team/victor.jpg",
         linkedInUrl: "https://linkedin.com",
     },
 ];
