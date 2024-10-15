@@ -18,7 +18,7 @@ const MoreThanASport = () => {
                 <h2 className="text-2xl lg:text-3xl font-bold text-center lg:text-left">
                     More than a sport: Handball for hope.
                 </h2>
-                <p className="my-5 text-center lg:text-left">
+                <p className="my-5 px-2 md:px-0 text-center lg:text-left">
                     We believe that sports is a school that allows learning in a playful and fun manner, and gain fundamental skills.
                 </p>
                 <ul className="flex flex-col gap-3 lg:gap-5 px-5">

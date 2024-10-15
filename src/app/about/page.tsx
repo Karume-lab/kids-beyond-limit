@@ -18,7 +18,6 @@ const WhoWeArePage = () => {
                 </div>
             </div>
 
-
             <div className='md:w-2/3 px-10 py-8 sm:px-12 md:px-14 lg:px-20 mx-auto my-5 flex flex-col gap-10 bg-white'>
                 <section className='flex flex-col gap-2 md:gap-5'>
                     <span className='font-semibold'>WHO WE ARE</span>
@@ -34,18 +33,16 @@ const WhoWeArePage = () => {
                 <section id='team' className='py-20'>
                     <span className='font-semibold pb-4'>OUR TEAM</span>
                     <p className='text-base md:text-lg '>Together, we work tirelessly to create opportunities, foster growth, and empower children through education, mentorship, and sports.</p>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 lg:gap-20 py-8'>
+                    <div className='flex flex-col lg:flex-row  gap-10 sm:gap-12 lg:gap-20 py-8'>
                         {team.map(person => (
                             <PersonCard key={person.linkedInUrl} person={person} />
                         ))}
                     </div>
                 </section>
 
-
                 <section id='what-we-do' className='space-y-4'>
                     <span className='font-semibold text-lg sm:text-xl'>WHAT WE DO</span>
-
-                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 lg:gap-20'>
+                    <div className='flex flex-col lg:flex-row gap-10 sm:gap-12 lg:gap-20'>
                         {actions.map(action => (
                             <ActionCard key={action.title} action={action} />
                         ))}
@@ -62,18 +59,18 @@ const WhoWeArePage = () => {
                         </p>
                     </div>
                     <RoundedImageCard
-                        imageUrl="/simple-mission.png"
+                        imageUrl="/simple-mission.jpg"
                         alt="Child"
-                        size={400}
+                        size={500}
                     />
                 </div>
 
                 <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 justify-center items-center">
                     <div className='order-2 lg:order-1'>
                         <RoundedImageCard
-                            imageUrl="/simple-mission.png"
+                            imageUrl="/simple-mission-2.jpg"
                             alt="Child"
-                            size={400}
+                            size={500}
                         />
                     </div>
 

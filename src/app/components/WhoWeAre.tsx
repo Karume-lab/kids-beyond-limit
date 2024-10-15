@@ -7,8 +7,7 @@ import { siteConfig } from '@/lib/site-config';
 
 const WhoWeAre = () => {
     return (
-        <div id='who-we-are' className='mt-56 md:mt-80 xl:mt-40 p-10 md:px-20 lg:px-60 flex flex-wrap gap-5 justify-evenly'>
-            {/* Left Section: Text Content */}
+        <div id='who-we-are' className='mt-24 md:mt-64 xl:mt-40 p-10 md:px-20 lg:px-60 flex flex-wrap gap-5 justify-evenly'>
             <div className='space-y-2 max-w-lg'>
                 <h2 className='text-sm font-bold '>WHO WE ARE</h2>
                 <p className='text-base md:text-xl pb-5'>
@@ -17,7 +16,6 @@ const WhoWeAre = () => {
                 <LearnMore url={siteConfig.links.about} />
             </div>
 
-            {/* Right Section: Image */}
             <RoundedImageCard
                 alt='The team in an indoor court'
                 imageUrl='/who-we-are-bg-img.png'

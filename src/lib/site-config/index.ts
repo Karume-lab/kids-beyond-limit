@@ -3,6 +3,7 @@ const siteConfig = {
     name: "Kids Beyond Limit",
     description: "Empowering children to reach their full potential through sports and education.",
     logoUrl: "/kbl-logo 1.png",
+    miniLogoUrl: "/kbl-logo-mini.png",
     links: {
         about: "/about",
         home: "/",

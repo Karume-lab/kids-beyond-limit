@@ -1,6 +1,6 @@
 "use client";
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { navLinks } from '@/lib/constants';
 import NavLink from './NavLink';
 import { Button } from '@/components/ui/button';
@@ -11,6 +11,7 @@ import { siteConfig } from '@/lib/site-config';
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolling, setIsScrolling] = useState(false);
+    const headerRef = useRef<HTMLElement>(null);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -26,16 +27,28 @@ const Header: React.FC = () => {
             }, 150);
         };
 
+        const handleClickOutside = (event: MouseEvent) => {
+            if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
+                setIsMenuOpen(false);
+            }
+        };
+
         window.addEventListener('scroll', handleScroll);
+        document.addEventListener('mousedown', handleClickOutside);
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            document.removeEventListener('mousedown', handleClickOutside);
             clearTimeout(scrollTimeout);
         };
     }, []);
 
     return (
-        <header className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300 ease-in-out ${isScrolling ? '-translate-y-full' : 'translate-y-0'}`}>
-            <div className="px-4 lg:px-32 xl:px-40 py-4 flex justify-between items-center">
+        <header
+            ref={headerRef}
+            className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300 ease-in-out ${isScrolling ? '-translate-y-full' : 'translate-y-0'
+                }`}
+        >
+            <div className="px-4 lg:px-32 xl:px-40 flex justify-between items-center">
                 <Link href={siteConfig.links.home} className="flex items-center space-x-2">
                     <KblLogo />
                 </Link>
@@ -66,6 +79,5 @@ const Header: React.FC = () => {
         </header>
     );
 };
-
 
 export default Header;

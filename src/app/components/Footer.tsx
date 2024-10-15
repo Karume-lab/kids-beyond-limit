@@ -4,13 +4,14 @@ import Link from 'next/link';
 import { Facebook, Instagram, Mail, Phone } from 'lucide-react';
 import { siteConfig } from '@/lib/site-config';
 
+
 const Footer = () => {
     return (
         <>
-            <div className="bg-white h-auto flex flex-col items-center text-center lg:text-start justify-center lg:flex-row gap-16 lg:justify-around lg:items-start p-8 md:p-16 border-t">
+            <div className="bg-white h-auto flex flex-col items-center text-center lg:text-start justify-center w:h-dvh lg:flex-row gap-16 lg:justify-around lg:items-start p-8 md:p-16 border-t">
 
                 {/* Logo and Description */}
-                <div className="w-full md:w-1/4 mb-6 md:mb-0 border-r">
+                <div className="w-full md:w-1/4 mb-6 md:mb-0 border-b py-4 flex items-center justify-center flex-col lg:block lg:border-r">
                     <Image
                         src="/logo-no-backg.png"
                         alt="KBL Logo"

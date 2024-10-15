@@ -5,7 +5,7 @@ import React from 'react'
 const KblLogo = () => {
     return (
         <Image
-            src={siteConfig.logoUrl}
+            src={siteConfig.miniLogoUrl}
             alt={`${siteConfig.name}'s Logo`}
             width={80}
             height={80}

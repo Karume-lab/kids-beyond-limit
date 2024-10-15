@@ -16,7 +16,7 @@ const ActionCard: React.FC<ActionCardProps> = ({ action }) => {
 
 
     return (
-        <div className='flex flex-col gap-2'>
+        <div className='flex flex-1 flex-col gap-2'>
             <div className='min-h-32 h-2/3 overflow-hidden'>
                 <Image
                     src={imageUrl}
