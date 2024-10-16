@@ -5,42 +5,28 @@ import { useState, useEffect } from 'react';
 
 const MasonryGrid = () => {
   const images = [
-    "/gallery/img2.jpg",
-    "/gallery/img3.jpg",
-    "/gallery/img4.jpg",
-    "/gallery/img5.jpg",
-    "/gallery/img6.jpg",
-    "/gallery/img7.jpg",
-    "/gallery/img9.jpg",
-    "/gallery/img10.jpg",
-    "/gallery/img11.jpg",
-    "/gallery/img12.jpg",
-    "/gallery/img13.jpg",
-    "/gallery/img14.jpg",
-    "/gallery/img15.jpg",
-    "/gallery/img16.jpg",
-    "/gallery/img17.jpg",
-    "/gallery/P1030783.jpg",
-    "/gallery/P1030785.jpg",
-    "/gallery/P1030788.jpg",
-    "/gallery/P1030789.jpg",
-    "/gallery/P1030790.jpg",
-    "/gallery/P1030791.jpg",
-    "/gallery/P1030793.jpg",
-    "/gallery/P1030794.jpg",
-    "/gallery/P1030801.jpg",
-    "/gallery/P1030803.jpg",
-    "/gallery/P1030804.jpg",
-    "/gallery/P1030806.jpg",
-    "/gallery/P1030807.jpg",
-    "/gallery/P1030808.jpg",
-    "/gallery/P1030810.jpg",
-    "/gallery/P1030811.jpg",
-    "/gallery/P1030812.jpg",
-    "/gallery/P1030813.jpg",
-    "/gallery/P1030815.jpg",
-    "/gallery/P1030817.jpg",
-  ]
+    "/gallery/001.jpg",
+    "/gallery/002.jpg",
+    "/gallery/003.jpg",
+    "/gallery/004.jpg",
+    "/gallery/005.jpg",
+    "/gallery/006.jpg",
+    "/gallery/007.jpg",
+    "/gallery/008.jpg",
+    "/gallery/009.jpg",
+    "/gallery/010.jpg",
+    "/gallery/011.jpg",
+    "/gallery/012.jpg",
+    "/gallery/013.jpg",
+    "/gallery/014.jpg",
+    "/gallery/015.jpg",
+    "/gallery/016.jpg",
+    "/gallery/017.jpg",
+    "/gallery/018.jpg",
+    "/gallery/019.jpg",
+    "/gallery/020.jpg",
+    "/gallery/021.jpg",
+  ];
 
   const [loaded, setLoaded] = useState(false);
 
@@ -66,20 +52,20 @@ const MasonryGrid = () => {
 
         {loaded &&
           images.map((image, i) => (
-            <div key={i} className="overflow-hidden group">
-              <Image
-                src={image}
-                alt={`Gallery image ${i}`}
-                style={{
-                  display: 'block',
-                  objectFit: 'cover',
-                }}
-                className="rounded-md transition-transform duration-300 group-hover:scale-125"
-                width={500}
-                height={300}
-                quality={80}
-                priority={i === 0}
-              />
+            <div key={i} className="relative w-full h-auto overflow-hidden rounded-lg">
+              <div className="relative w-full h-0 pb-[60%] overflow-hidden rounded-lg">
+                <Image
+                  src={image}
+                  alt={`Gallery image ${i}`}
+                  className={`absolute inset-0 w-full h-full object-cover transition-transform duration-300 ${
+                    i % 2 === 0 ? 'hover:scale-110' : 'scale-110 hover:scale-100'
+                  }`}
+                  width={500}
+                  height={300}
+                  quality={80}
+                  priority={i === 0}
+                />
+              </div>
             </div>
           ))
         }
@@ -87,5 +73,6 @@ const MasonryGrid = () => {
     </ResponsiveMasonry>
   );
 };
+
 
 export default MasonryGrid;
