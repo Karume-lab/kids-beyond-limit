@@ -119,7 +119,7 @@ const team: T_Person[] = [
     {
         fullName: "Fredrick Olonde",
         role: "Founder and Project Manager",
-        profilePictureUrl: "",
+        profilePictureUrl: "/team/fred.jpg",
         linkedInUrl: "https://linkedin.com",
     },
     {
